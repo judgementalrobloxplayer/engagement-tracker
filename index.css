@@ -1,0 +1,86 @@
+:root {
+    --background-color: #f0f0f0;
+    --white: #ffffff;
+    --button-color: #00502f;
+    --selected-color:#003d1f;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--white);
+    padding: 24px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 400px;
+    margin: 0 16px; 
+    min-height: 50vh;
+    @media screen and (max-width: 768px) {
+        padding: 24px; 
+    }
+}
+
+.landing-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.centered-text {
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    
+    @media screen and (max-width: 768px) {
+        font-size: 24px;
+    }
+}
+
+p {
+    font-size: 16px;
+    
+    @media screen and (max-width: 768px) {
+        font-size: 18px;
+    }
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: var(--button-color);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px;
+    font-size: 18px;
+    
+    @media screen and (max-width: 768px) {
+        font-size: 16px;
+        padding: 12px 24px;
+    }
+}
+
+.button:hover {
+    background-color: #003d1f;
+}

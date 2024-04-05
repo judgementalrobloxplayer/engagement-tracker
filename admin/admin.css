@@ -1,0 +1,196 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.admin-container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 20px;
+    max-width: 400px;
+    width: 90%;
+    height: auto;
+    margin: 0 auto; 
+}
+
+.admin-heading {
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.admin-input {
+    font-family: inherit; 
+    font-size: inherit; 
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    outline: none;
+    box-sizing: border-box; 
+    resize: none;
+}
+
+.admin-dropdown {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.time-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.time-label {
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.admin-buttons {
+    border: #003D23;
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: none;
+}
+
+.admin-buttons a {
+    display: block;
+    background-color: #00502F;
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    margin: 0;
+    text-decoration: none; 
+}
+
+.admin-buttons a:hover {
+    background-color: #003D23;
+}
+
+.edit-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #00502F;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.edit-button:hover {
+    background-color: #003D23;
+}
+
+.button-link {
+    font-size: 14px;
+    color: #777;
+    text-decoration: underline;
+    cursor: pointer;
+    text-align: left;
+    display: block;
+    margin-top: 10px;
+}
+
+.error-box {
+    background-color: transparent; 
+    border: 1px solid transparent; 
+    color: #ff0000;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.error-message {
+    font-weight: bold;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 20px;
+    max-width: 400px;
+    width: 90%;
+    height: 81%;
+    margin: 0 auto;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+    width: auto;
+    height: 93.5%;
+}
+
+.modal-content button {
+    margin: 5px;
+}
+#myModal {
+    display: none;
+}
+
+#myModal .admin-buttons {
+    display: block;
+}
+input[type="date"] {
+    position: relative;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    background: transparent;
+    bottom: 0;
+    color: transparent;
+    cursor: pointer;
+    height: auto;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: auto;
+}
+
+input[type="time"] {
+    position: relative;
+}
+
+input[type="time"]::-webkit-calendar-picker-indicator {
+    background: transparent;
+    bottom: 0;
+    color: transparent;
+    cursor: pointer;
+    height: auto;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: auto;
+}
